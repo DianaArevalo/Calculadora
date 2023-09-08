@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Mi calculadora</h1>
+    <h2>Diana C. Arevalo A</h2>
+    <div class="calculadora">
+        <input type="text" class="text" id="pantalla" readonly>
+        <br>
+        <button class="btn" onclick="borrarTodo()">c</button>
+        <button class="btn" onclick="agregar()">()</button>
+        <button class="btn" onclick="agregar('%')">%</button>
+        <button class="btn" onclick="agregar('/')">/</button>
+        <br>
+        <button class="btn" onclick="agregar('7')">7</button>
+        <button class="btn" onclick="agregar('8')">8</button>
+        <button class="btn" onclick="agregar('9')">9</button>
+        <button class="btn" onclick="agregar('*')">x</button>
+        <br>
+        <button class="btn" onclick="agregar('4')">4</button>
+        <button class="btn" onclick="agregar('5')">5</button>
+        <button class="btn" onclick="agregar('6')">6</button>
+        <button class="btn" onclick="agregar('-')">-</button>
+        <br>
+        <button class="btn" onclick="agregar('1')">1</button>
+        <button class="btn" onclick="agregar('2')">2</button>
+        <button class="btn" onclick="agregar('3')">3</button>
+        <button class="btn" onclick="agregar('+')">+</button>
+        <br>
+        <button id="cero" class="btn" onclick="agregar('0')">0</button>
+        <button class="btn" onclick="agregar('.')">.</button>
+        <button id="igual" class="btn" onclick="calcular()">=</button>
+        <button class="btn" onclick="borrar()">borrar</button>
+    </div>
+
+
+
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
